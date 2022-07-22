@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>最後一版PSD作業細節(單頁)</title>
+</head>
+ <link rel="stylesheet" href="files/style.css">
+ <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+ <link rel="stylesheet" href="files/lightbox.css"/>
+
+<body>
+  <div class="bar">
+  <ul>
+    <li class="facebook">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png" alt="Facebook">
+        <span>粉絲團</span>
+      </a>
+    </li>
+    <li class="twitter">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="Twitter">
+        <span>追隨我們</span>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+  <div class="header">
+    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" alt="ogo">
+
+    <ul class="menu">
+      <li><a href="#">首頁</a></li>
+      <li class="menu-dropdown">
+        <a class="course-menu" href="#">產品介紹</a>
+        <ul>
+          <li>課程一</li>
+          <li>課程一</li>
+          <li>課程一</li>
+        </ul>
+      </li>
+      <li><a href="#">聯絡我們</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <!--section1-->
+    <div class="banner">
+      <!-- Slider main container -->
+      <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/bg_index.png"></div>
+          <div class="swiper-slide"><img src="images/bg_course.png"></div>
+          <div class="swiper-slide"><img src="images/bg_QA.png"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="headline">
+        <h1>六角學院<br>讓你奠定良好的前端基礎</h1>
+      </div>
+    </div>
+    <!--section1 end-->
+    <!--section2-->
+    <ul class="section-two">
+      <li class="item">
+        <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" data-lightbox="image-1" data-title="HTML5"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="html"></a>
+        
+        <h2>Title</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, aut aperiam quos ratione quod magnam laboriosam perferendis iusto! Dolorem non explicabo inventore temporibus voluptates consequuntur tempore accusantium minima similique ullam, cumque sit. Sapiente, laboriosam necessitatibus quia voluptatibus cumque ratione alias.</p>
+      </li>
+      <div class="item">
+         <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" data-lightbox="image-1" data-title="RWD"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="html"></a>
+        <h2>Title</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, aut aperiam quos ratione quod magnam laboriosam perferendis iusto! Dolorem non explicabo inventore temporibus voluptates consequuntur tempore accusantium minima similique ullam, cumque sit. Sapiente, laboriosam necessitatibus quia voluptatibus cumque ratione alias.</p>
+      </div>
+      <div class="item">
+         <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" data-lightbox="image-1" data-title="jQuery"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="html"></a>
+        <h2>Title</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, aut aperiam quos ratione quod magnam laboriosam perferendis iusto! Dolorem non explicabo inventore temporibus voluptates consequuntur tempore accusantium minima similique ullam, cumque sit. Sapiente, laboriosam necessitatibus quia voluptatibus cumque ratione alias.</p>
+      </div>
+    </ul>
+    <!--section2 end-->
+    <div class="section-three">
+      <h2>线上及实体课程的差异</h2>
+      <table>
+        <tr>
+          <th>项目</th>
+          <th>Hex School 线上课程</th>
+          <th>一般线上课程</th>
+          <th>实体课程</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+    </div>
+    <div class="section-four">
+      <h2>对我们课程有兴趣吗?<br>欢迎留下您的资料</h2>
+      <form class="form-container" action="index.html">
+        <textarea class="blank-img"></textarea>
+        <div class="blank-form">
+
+          <div><label for="fname">姓名</label>
+          <input type="text" id="fname" name="fname" placeholder="姓名"></div>
+          
+          <div><label for="phone">電話</label>
+          <input type="number" id="phone" name="phone" placeholder="電話"></div>
+          
+           <div><label for="email">信箱</label>
+          <input type="text" id="mail" name="mail" placeholder="信箱"></div>
+          
+
+          <input type="submit" value="送出">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="footerLogo">
+ 
+  
+  <ul>
+    <li>聯絡我們: <a href = "mailto: hexschool@gmail.com">hexschool@gmail.com</a></li>
+    <li>電話: <a href="#">0123456789</a></li>
+  </ul>
+     </div>
+     <script src="files/jquery-3.6.0.min.js"></script>
+     <script src="files/all.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="files/lightbox.js"></script>
+</body>
+</html>
+
