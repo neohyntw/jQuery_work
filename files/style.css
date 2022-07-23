@@ -48,10 +48,23 @@ table {
 }
 
 body {
+  max-width: 1000px;
   margin: 0 auto;
   font-family: arial;
   line-height: 130%;
 }
+
+.top a{
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: darkblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+}
+
 
 
 .bar {
@@ -151,8 +164,7 @@ h1{
 }
 
 .banner {
-  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
-  height: 300px;
+  height: 250px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,26 +221,26 @@ h1{
   transform: translateY(-50%);
 }
 
-.section-two {
+.content {
   display:flex;
   box-sizing:border-box;
   justify-content: space-evenly;
   padding: 20px 0;
 }
 
-.section-two .item {
+.content .item {
   box-sizing: border-box;
   border: solid 1px #ececec;
   padding: 30px;
   width: 31%;
 }
 
-.section-two .item h2{
+.content .item h2{
   text-align: center;
   padding: 10px 0;
 }
 
-.section-two .item img{
+.content .item img{
   width: 100%;
   margin: auto;
 }
@@ -382,12 +394,12 @@ h1{
 
 
 @media only screen and (max-width: 768px) {
-   .section-two{
+   .content{
     flex-direction: column;
     align-items: center;
     }
 
-    .section-two .item{
+    .content .item{
       width: 90%;
       margin-top: 20px ;
     }
