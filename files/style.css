@@ -48,10 +48,14 @@ table {
 }
 
 body {
-  max-width: 1000px;
-  margin: 0 auto;
+
   font-family: arial;
   line-height: 130%;
+}
+
+.wrap{
+    max-width: 1000px;
+  margin: 0 auto;
 }
 
 .top a{
@@ -119,11 +123,18 @@ h2{
   font-size: 20px;
 }
 
-h1{
-  font-size: 24px;
-  line-height: 32px;
-  padding: 30px;
+
+
+.the-logo{
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png) no-repeat bottom center;
+  width: 200px;
+  height: 48px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 
 .header{
   display: flex;
@@ -164,7 +175,7 @@ h1{
 }
 
 .banner {
-  height: 250px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +229,7 @@ h1{
 
 .swiper img{
   width: 100%;
-  transform: translateY(-50%);
+  display: block;
 }
 
 .content {
