@@ -55,7 +55,7 @@ body {
 
 .wrap{
     max-width: 1000px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .top a{
@@ -69,22 +69,24 @@ body {
   color: white;
 }
 
+.hide{
+  visibility: hidden;
+}
 
 
 .bar {
   background: #ececec;
   box-sizing: border-box;
   padding: 10px 20px;
-}
-
-.bar ul{
   display: flex;
   justify-content: flex-end;
 }
 
+
 .bar li a{
   text-decoration:none;
   display: flex;
+  align-items: center
 }
 
 .bar li span{
@@ -192,7 +194,7 @@ h2{
   z-index: 10;
 }
 
-.banner .headline h1{
+.banner .headline h2{
   background: rgba(25, 25, 25, .5);
   box-sizing:border-box;
   color: white;
@@ -201,6 +203,8 @@ h2{
   padding-left: 5%;
   transform: translateY(-50%);
   width: 100%;
+  font-size: 36px;
+  line-height: 1.5;
 }
 
 .menu{
@@ -256,86 +260,84 @@ h2{
   margin: auto;
 }
 
-.section-three{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+.table-compare{
+  margin: 0 auto;
   padding: 0 30px 30px;
 }
 
-.section-three h2, .section-four h2{
+.table-compare h2, .contact-us h2{
  font-size: 24px;
  padding: 20px 0;
  text-align: center;
  line-height: 1.3;
 }
 
-.section-three table{
+.table-compare table{
   width: 100%;
   text-align:center;
 
 }
 
-.section-three table tr:first-child{
+.table-compare table tr:first-child{
   border-top: solid 1px #ececec;
   border-bottom: solid 1px #ececec;
   background: lightgray;
 }
 
-.section-three table tr:first-child th{
+.table-compare table tr:first-child th{
   padding: 10px 0px;
 }
 
-.section-three table tr td {
+.table-compare table tr td {
   border-bottom: solid 1px #ececec;
   padding:10px 0;
 }
 
-.section-four{
+.contact-us{
   background: darkgreen;
   color: white;
 }
 
-.section-four h1{
+.contact-us h1{
   text-align: center;
 }
 
-.section-four .form-container{
+.contact-us .form-container{
   display:flex;
   justify-content:space-evenly;
   box-sizing: border-box;
   padding: 0px 0 30px;
 }
 
-.section-four .form-container .blank-img{
+.contact-us .form-container .blank-img{
   width: 45%;
   height: 200px;
   background: #fff;
   border-radius: 5px;
 }
 
-.section-four .form-container .blank-form{
+.contact-us .form-container .blank-form{
   width: 45%;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.section-four .form-container .blank-form div{
+.contact-us .form-container .blank-form div{
   display:flex;
   flex-direction:column;
   width:100%;
 }
 
-.section-four .form-container .blank-form label{
+.contact-us .form-container .blank-form label{
   font-size:14px;
 }
 
-.section-four .form-container .blank-form input{
+.contact-us .form-container .blank-form input{
   font-size:16px;
 }
 
-.section-four .form-container .blank-form input[type=submit]{
+.contact-us .form-container .blank-form input[type=submit]{
   font-size:14px;
   width: 80px;
   padding: 5px 0;
@@ -347,7 +349,7 @@ h2{
   margin-top: 10px;
 }
 
-.section-four .form-container .blank-form input[type=submit]:hover {
+.contact-us .form-container .blank-form input[type=submit]:hover {
   background:white;
   cursor: pointer;
    color: #20c997;
@@ -356,7 +358,6 @@ h2{
 .footer {
   display:flex;
   justify-content: space-between;
-  height: 60px;
   align-items: center;
 }
 
@@ -390,12 +391,12 @@ h2{
   width: 100%;
 }
 
-.menu-dropdown > ul > li{
+.menu-dropdown > ul > li > a{
   padding: 10px 20px;
   color: #00cc99;
 }
 
-.menu-dropdown > ul > li:hover{
+.menu .menu-dropdown > ul > li > a:hover{
   background: #00cc99;
   color: #FFF;
   cursor: pointer;
@@ -415,23 +416,23 @@ h2{
       margin-top: 20px ;
     }
 
-    .section-four .form-container{
+    .contact-us .form-container{
       flex-direction: column;
       align-items: center;
     }
 
-     .section-four .form-container .blank-form{
+     .contact-us .form-container .blank-form{
       width: 90%;
     }
 
-    .section-four .form-container .blank-form label{
+    .contact-us .form-container .blank-form label{
       margin-top: 15px;
     }
 
-    .section-four .form-container .blank-img{
+    .contact-us .form-container .blank-img{
   width: 90%;}
 
-  .section-four .form-container .blank-form input[type=submit]{
+  .contact-us .form-container .blank-form input[type=submit]{
     margin-top: 20px;
   }
 }

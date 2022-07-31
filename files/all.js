@@ -42,6 +42,15 @@ $(document).ready(function(){
 	  },
 	});
 
+	function showBtnCondition() {
+	   if ($(this).scrollTop() > 400) {
+	     $('.top').removeClass('hide');
+	       } else {
+	        $('.top').addClass('hide');
+	      }
+	    }
+	$(window).scroll(showBtnCondition);
+
 	$('.top a').click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
@@ -49,6 +58,9 @@ $(document).ready(function(){
 		    scrollTop: 0
 		  }, 1000);
 	});
+
+	
+	  
 
 });
 
